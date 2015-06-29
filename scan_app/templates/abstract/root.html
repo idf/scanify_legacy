@@ -1,0 +1,48 @@
+{% load staticfiles %}  {# static template tag #}
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <!--the title -->
+  <title>{% block title %}Base{% endblock %}</title>
+
+  <!-- block meta -->
+  <block meta>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scanify the photo">
+    <meta name="keywords" content="image processing">
+    <meta name="author" content="Daniel">
+    {% block additional_meta %}{% endblock %}
+  </block>
+
+  <!-- css -->
+  <link type="text/css" rel="stylesheet" href="{% static "bower_components/bootstrap/dist/css/bootstrap.min.css" %}">
+  <!-- additional css -->
+  {% block additional_css %}
+  {% endblock %}
+
+  <!--ajax-->
+
+
+</head>
+
+<!-- body -->
+<body>
+{% block body %}
+{% endblock %}
+</body>
+
+<!-- javascript-->
+<!-- angular -->
+<script type="text/javascript" src="{% static "bower_components/angular/angular.min.js" %}"></script>
+<script type="text/javascript" src="{% static "js/util-js/angularjs/filters.js" %}"></script>
+<script type="text/javascript" src="{% static "js/directives.js" %}"></script>
+<script type="text/javascript" src="{% static "js/controllers.js" %}"></script>
+<script type="text/javascript" src="{% static "js/app.js" %}"></script>
+<!-- jquery -->
+<script type="text/javascript" src="{% static "bower_components/jquery/dist/jquery.min.js" %}"></script>
+<!-- css -->
+{% block additional_js %}
+{% endblock %}
+
+</html>

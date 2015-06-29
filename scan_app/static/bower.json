@@ -1,0 +1,29 @@
+{
+  "name": "scanify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/idf/scanify",
+  "authors": [
+    "Daniel D. ZHANG <zhangdanyangg@gmail.com>"
+  ],
+  "description": "scanify",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "scan",
+    "image",
+    "processing"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.1"
+  }
+}
