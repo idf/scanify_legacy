@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # call this with `source`
-cur=$(pwd);
+cur=$(pwd)
 if [ ! -d "venv" ]; then
   virtualenv venv
 fi
